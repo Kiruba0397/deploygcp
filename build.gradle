@@ -5,7 +5,7 @@ buildscript {    // Configuration for building
 		mavenCentral()
 	}
 	dependencies {
-		classpath 'com.google.cloud.tools:appengine-gradle-plugin:2.4.2' // If a newer version is available, use it
+		classpath ('com.google.cloud.tools:appengine-gradle-plugin:2.4.2') // If a newer version is available, use it
 	}
 }
 plugins {
@@ -43,6 +43,7 @@ dependencies {
 	testImplementation 'com.google.appengine:appengine-testing:+'
 	testImplementation 'com.google.appengine:appengine-api-stubs:+'
 	testImplementation 'com.google.appengine:appengine-tools-sdk:+'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 // Always run unit tests
